@@ -13,7 +13,7 @@ public class Ball : MonoBehaviour
 	void Update()
 	{
 		var hor = Input.GetAxisRaw("Horizontal");
-		//rb.velocity = new Vector2(hor, 0);
+
 		rb.AddForce(new Vector2(hor, 0));
 
 		if (Input.GetButtonDown("Jump"))
