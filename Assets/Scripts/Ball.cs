@@ -5,6 +5,7 @@ public class Ball : MonoBehaviour
 	public float jumpSpeed = 5;
 	Rigidbody2D rb;
 	public bool isGrounded;
+	bool hasWon;
 
 	void Start()
 	{
@@ -40,12 +41,16 @@ public class Ball : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
+		if (hasWon) return;
+
 		GameManager.instance.Win();
+		hasWon = true;
 	}
 
 	void Die()
 	{
 		// die sounds and particles
+		Destroy(gameObject);
 		GameManager.instance.Lose();
 	}
 }
