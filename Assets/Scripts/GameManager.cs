@@ -9,10 +9,19 @@ public class GameManager : MonoBehaviour
 	public int hp = 3;
 	public int currentLevel;
 
-	// singleton
 	public static GameManager instance;
+
+	public Transform transition;
+	Vector3 targetScale;
+
+	public AudioClip winSound;
+	public AudioClip loseSound;
+	public AudioClip gameOverSound;
+	AudioSource source;
+
 	void Start()
 	{
+		source = GetComponent<AudioSource>();
 		if (instance == null)
 		{
 			instance = this;
@@ -24,16 +33,23 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
+	void Update()
+	{
+		transition.localScale = Vector3.MoveTowards(transition.localScale,targetScale, 50 * Time.deltaTime);
+	}
+
 	public void Win()
 	{
 		currentLevel++;
 		Invoke("LoadNextLevel",1f);
-
+		targetScale = Vector3.one * 25;
+		source.PlayOneShot(winSound);
 	}
 
 	void LoadNextLevel()
 	{
 		SceneManager.LoadScene(levels[currentLevel]);
+		targetScale = Vector3.zero;
 	}
 
 	public void Lose()
@@ -43,6 +59,7 @@ public class GameManager : MonoBehaviour
 		{
 			// fail
 			Invoke("LoadNextLevel",1f);
+			source.PlayOneShot(loseSound);
 		}
 		else
 		{
@@ -50,6 +67,9 @@ public class GameManager : MonoBehaviour
 			currentLevel = 0;
 			hp = 3;
 			Invoke("LoadNextLevel",1f);
+			source.PlayOneShot(gameOverSound);
 		}
+
+		targetScale = Vector3.one * 25;
 	}
 }
