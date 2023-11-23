@@ -38,6 +38,18 @@ public class GameManager : MonoBehaviour
 
 	public void Lose()
 	{
-		
+		hp--;
+		if (hp > 0)
+		{
+			// fail
+			Invoke("LoadNextLevel",1f);
+		}
+		else
+		{
+			// game over
+			currentLevel = 0;
+			hp = 3;
+			Invoke("LoadNextLevel",1f);
+		}
 	}
 }

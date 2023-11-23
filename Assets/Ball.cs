@@ -26,6 +26,11 @@ public class Ball : MonoBehaviour
 	void OnCollisionEnter2D(Collision2D other)
 	{
 		isGrounded = true;
+
+		if (other.gameObject.CompareTag("Enemy"))
+		{
+			Die();
+		}
 	}
 
 	void OnCollisionExit2D(Collision2D other)
@@ -36,5 +41,11 @@ public class Ball : MonoBehaviour
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		GameManager.instance.Win();
+	}
+
+	void Die()
+	{
+		// die sounds and particles
+		GameManager.instance.Lose();
 	}
 }
