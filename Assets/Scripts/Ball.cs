@@ -44,6 +44,7 @@ public class Ball : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
+		if (other.gameObject.name != "Teleporter") return;
 		if (hasWon) return;
 
 		GameManager.instance.Win();
