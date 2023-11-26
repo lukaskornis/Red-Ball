@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
+	public float moveForce;
 	public float jumpSpeed = 5;
 	Rigidbody2D rb;
 	public bool isGrounded;
@@ -15,8 +16,7 @@ public class Ball : MonoBehaviour
 	void Update()
 	{
 		var hor = Input.GetAxisRaw("Horizontal");
-
-		rb.AddForce(new Vector2(hor, 0));
+		rb.AddForce(new Vector2(hor, 0) * Time.deltaTime * moveForce);
 
 		if (Input.GetButtonDown("Jump") && isGrounded)
 		{
