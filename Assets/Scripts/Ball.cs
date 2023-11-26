@@ -8,8 +8,11 @@ public class Ball : MonoBehaviour
 	public bool isGrounded;
 	bool hasWon;
 
+	public GameObject gameManager;
+
 	void Start()
 	{
+		Instantiate(gameManager);
 		rb = GetComponent<Rigidbody2D>();
 	}
 

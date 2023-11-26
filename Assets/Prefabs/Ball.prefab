@@ -250,6 +250,7 @@ MonoBehaviour:
   moveForce: 1000
   jumpSpeed: 10
   isGrounded: 0
+  gameManager: {fileID: 2872453512623569723, guid: 20128b82f724e46368afdfd07a7f91a1, type: 3}
 --- !u!1 &8522608905006703328
 GameObject:
   m_ObjectHideFlags: 0
