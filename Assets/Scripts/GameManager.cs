@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
 
 	void Start()
 	{
+		Application.targetFrameRate = 60;
+
 		source = GetComponent<AudioSource>();
 		if (instance == null)
 		{

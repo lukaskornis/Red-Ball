@@ -6,9 +6,13 @@ public class Ball : MonoBehaviour
 	Rigidbody2D rb;
 	public bool isGrounded;
 	bool hasWon;
+	public float moveForce;
+
+	public GameObject gameManager;
 
 	void Start()
 	{
+		Instantiate(gameManager);
 		rb = GetComponent<Rigidbody2D>();
 	}
 
@@ -16,7 +20,7 @@ public class Ball : MonoBehaviour
 	{
 		var hor = Input.GetAxisRaw("Horizontal");
 
-		rb.AddForce(new Vector2(hor, 0));
+		rb.AddForce(new Vector2(hor, 0) * Time.deltaTime * moveForce);
 
 		if (Input.GetButtonDown("Jump") && isGrounded)
 		{
@@ -41,6 +45,7 @@ public class Ball : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
+		if (other.gameObject.name != "Teleporter") return;
 		if (hasWon) return;
 
 		GameManager.instance.Win();
