@@ -60,7 +60,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Template.unity
     guid: abbf209147e1f44fcb597f42b3081505
   - enabled: 0
-    path: Assets/Scenes/ugniusS_cave.unity
+    path: Assets/Scenes/UgniusSCave.unity
     guid: b4077562e2253364a84610d0ce90ca56
   - enabled: 1
     path: Assets/Scenes/VincentasS-plains.unity
