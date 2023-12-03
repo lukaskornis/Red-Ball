@@ -47,10 +47,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levels:
-  - Level 1
-  - Level 2
-  - Level 3
-  - Showcase
+  - UgniusSCave
+  - Deimis D. Cave
+  - Denis B. Water
+  - Greta G. Water
+  - JorisS Sky Islands
+  - Nida K Plains
+  - Erikas J. Plains
+  - LeuB Sky Islands
+  - ShowCase
   hp: 3
   currentLevel: 0
   transition: {fileID: 4097916974262799324}
@@ -67,9 +72,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ede69fff88b7d1a4d9e9c01bfbef9a2e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
