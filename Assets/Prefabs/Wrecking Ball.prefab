@@ -165,7 +165,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.0000000034059795, y: 0.5}
-  m_ConnectedAnchor: {x: 0.0000009792191, y: -0.6949999}
+  m_ConnectedAnchor: {x: 0.0000008302074, y: -0.6950002}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -375,7 +375,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.0000000034059795, y: 0.5}
-  m_ConnectedAnchor: {x: 0.7912495, y: 2.3348439}
+  m_ConnectedAnchor: {x: 89.06574, y: 1.9105934}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -549,7 +549,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.0000000034059795, y: 0.5}
-  m_ConnectedAnchor: {x: 0.0000006386211, y: -0.5849999}
+  m_ConnectedAnchor: {x: -0.0000037678644, y: -0.58499265}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -723,7 +723,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.0000000034059795, y: 0.5}
-  m_ConnectedAnchor: {x: 0.00000040446002, y: -0.69000024}
+  m_ConnectedAnchor: {x: -0.0000033846918, y: -0.6899937}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -909,5 +909,5 @@ RelativeJoint2D:
   m_MaxTorque: 10000
   m_CorrectionScale: 0.3
   m_AutoConfigureOffset: 1
-  m_LinearOffset: {x: -0.050000086, y: 1.1000001}
+  m_LinearOffset: {x: -0.050000355, y: 1.1000024}
   m_AngularOffset: 0
