@@ -47,10 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levels:
-  - Level 1
-  - Level 2
-  - Level 3
-  - Showcase
+  - menu
   hp: 3
   currentLevel: 0
   transition: {fileID: 4097916974262799324}

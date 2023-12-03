@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 492888c0e72359041adacfee23852e71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: DeimisM_Cave
+  sceneName: AndriusS-Plains
 --- !u!212 &62596900
 SpriteRenderer:
   m_ObjectHideFlags: 0
