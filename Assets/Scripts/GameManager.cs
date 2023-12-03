@@ -42,9 +42,8 @@ public class GameManager : MonoBehaviour
 
 	public void Win()
 	{
-		currentLevel++;
-		Invoke("LoadNextLevel",1f);
-		targetScale = Vector3.one * 25;
+		SceneManager.LoadScene("Menu");
+		targetScale = Vector3.zero;
 		source.PlayOneShot(winSound);
 	}
 
@@ -60,7 +59,7 @@ public class GameManager : MonoBehaviour
 		if (hp > 0)
 		{
 			// fail
-			Invoke("LoadNextLevel",1f);
+			Invoke("LoadNextLevel", 1f);
 			source.PlayOneShot(loseSound);
 		}
 		else
@@ -68,10 +67,10 @@ public class GameManager : MonoBehaviour
 			// game over
 			currentLevel = 0;
 			hp = 3;
-			Invoke("LoadNextLevel",1f);
+			SceneManager.LoadScene("Menu");
 			source.PlayOneShot(gameOverSound);
 		}
 
-		targetScale = Vector3.one * 25;
+		targetScale = Vector3.zero;
 	}
 }

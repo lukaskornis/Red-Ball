@@ -47,10 +47,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levels:
-  - Level 1
-  - Level 2
-  - Level 3
-  - Showcase
+  - Martynas J Sky Islands
+  - Nida K Plains
+  - AretasR
+  - UgniusSCave
+  - LeuB Sky Islands
+  - "Ignas \u010C. Cave"
+  - Erikas J. Plains
   hp: 3
   currentLevel: 0
   transition: {fileID: 4097916974262799324}
