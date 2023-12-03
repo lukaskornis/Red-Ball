@@ -50,7 +50,8 @@ public class GameManager : MonoBehaviour
 
 	void LoadNextLevel()
 	{
-		SceneManager.LoadScene(levels[currentLevel]);
+		//SceneManager.LoadScene(levels[currentLevel]);
+		SceneManager.LoadScene("Menu");
 		targetScale = Vector3.zero;
 	}
 
