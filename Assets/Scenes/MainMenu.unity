@@ -480,6 +480,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1663797711}
   - component: {fileID: 1663797710}
+  - component: {fileID: 1663797712}
   m_Layer: 0
   m_Name: btn_Credits
   m_TagString: Untagged
@@ -555,6 +556,19 @@ Transform:
   - {fileID: 1835431752}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1663797712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663797709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a83be94e912f5c64f9d617cfe43bcf27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Credits
 --- !u!1 &1835431751
 GameObject:
   m_ObjectHideFlags: 0
@@ -907,6 +921,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1975616960}
   - component: {fileID: 1975616959}
+  - component: {fileID: 1975616961}
   m_Layer: 0
   m_Name: btn_Play
   m_TagString: Untagged
@@ -982,6 +997,19 @@ Transform:
   - {fileID: 1879871908}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1975616961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975616958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a83be94e912f5c64f9d617cfe43bcf27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: levelSelect
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
