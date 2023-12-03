@@ -47,12 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levels:
-  - Menu
-  - JorisS Sky Islands
-  - JustasB Sky Islands
-  - Kristupas cave
-  - UgniusSCave
-  - Nida K Plains
+  - Menu1
   hp: 3
   currentLevel: 0
   transition: {fileID: 4097916974262799324}

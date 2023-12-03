@@ -5,6 +5,19 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - pr30
+  - pr31
+  - pr19
+  - pr26
+  - pr35
+  - pr24
+  - pr33
+  - pr36
+  - pr39
+  - pr40
+  - Credits
+  - Play
+  - Back
   layers:
   - Default
   - TransparentFX
