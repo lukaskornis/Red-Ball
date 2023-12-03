@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
 			// game over
 			currentLevel = 0;
 			hp = 3;
-			Invoke("LoadNextLevel",1f);
+			SceneManager.LoadScene("mainMenu");
 			source.PlayOneShot(gameOverSound);
 		}
 
