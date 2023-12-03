@@ -42,7 +42,8 @@ public class GameManager : MonoBehaviour
 
 	public void Win()
 	{
-		currentLevel++;
+		currentLevel = 0;
+		hp = 3;
 		Invoke("LoadNextLevel",1f);
 		targetScale = Vector3.one * 25;
 		source.PlayOneShot(winSound);
@@ -50,6 +51,7 @@ public class GameManager : MonoBehaviour
 
 	void LoadNextLevel()
 	{
+		hp = 3;
 		SceneManager.LoadScene(levels[currentLevel]);
 		targetScale = Vector3.zero;
 	}
