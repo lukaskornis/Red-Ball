@@ -25,6 +25,8 @@ public class Ball : MonoBehaviour
 		{
 			rb.velocity += Vector2.up * jumpSpeed;
 		}
+
+		gameManager.transform.position = transform.position;
 	}
 
 	void OnCollisionEnter2D(Collision2D other)
