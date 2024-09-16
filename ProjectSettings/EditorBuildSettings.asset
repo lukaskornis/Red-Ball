@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Kipras Prefabs/Start.unity
+    guid: 6c19fa3f5ff144f44a32dd08e5ad62ce
+  - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: c39f84d1a29c64577897a99bce8c4b92
   - enabled: 1
@@ -15,6 +18,51 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 3.unity
     guid: 7c58a892ab7f743aca0540f7e30b5faa
   - enabled: 1
+    path: Assets/Kipras Prefabs/Menu.unity
+    guid: a940cf6347c165840ad27e094a3a1818
+  - enabled: 1
     path: Assets/Art/Showcase.unity
     guid: 417cbcb51dd90435b81b5c5228fc2eb8
+  - enabled: 1
+    path: Assets/Scenes/Andrius S. Plains.unity
+    guid: efd4531ef030b97499073252209fad9d
+  - enabled: 1
+    path: Assets/Scenes/BenediktasD.unity
+    guid: 50c546f34238c2243b4c8449d13d324e
+  - enabled: 1
+    path: Assets/Scenes/Deimis D. Cave.unity
+    guid: 60b0a1c1658200c428a7d02d5d450ff4
+  - enabled: 1
+    path: Assets/Scenes/Erikas J. Plains.unity
+    guid: a186218f2c886c04fbc301f61bb6f193
+  - enabled: 1
+    path: Assets/Scenes/Greta G. Water.unity
+    guid: 3643077e162c69544b14e44c6d4f8618
+  - enabled: 1
+    path: Assets/Kipras Prefabs/Credits.unity
+    guid: f6b8be0dded4d154b8ea5500454c8edb
+  - enabled: 1
+    path: Assets/Scenes/JorisS Sky Islands.unity
+    guid: 076130856c8838f4e835d4c0f33b2434
+  - enabled: 1
+    path: Assets/Scenes/Karolina K. Water.unity
+    guid: 8b9ad771afba9274a80e875ff763032e
+  - enabled: 1
+    path: Assets/Scenes/KiprasP Mountains.unity
+    guid: 0bae8e3a015c83c44857e570d8900a99
+  - enabled: 1
+    path: Assets/Scenes/LeuB Sky Islands.unity
+    guid: cd65f49008353f44aae1d274df266038
+  - enabled: 1
+    path: Assets/Scenes/Nida K Plains.unity
+    guid: 17bb19007e210234ba76ee131a18038e
+  - enabled: 1
+    path: Assets/Scenes/Nojus Z..unity
+    guid: d34920a96253abc4aa59ad7e96c1af0f
+  - enabled: 1
+    path: Assets/Scenes/Paulius T..unity
+    guid: 230f8546ace1bc24fad5bc91116deb55
+  - enabled: 1
+    path: Assets/Scenes/Paulius_D._Cave.unity
+    guid: fe4d1f6bad00b194faa3907458a02fc0
   m_configObjects: {}

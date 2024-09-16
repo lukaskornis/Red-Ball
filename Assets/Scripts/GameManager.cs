@@ -37,22 +37,29 @@ public class GameManager : MonoBehaviour
 
 	void Update()
 	{
-		transition.localScale = Vector3.MoveTowards(transition.localScale,targetScale, 50 * Time.deltaTime);
+		transition.localScale = Vector3.MoveTowards(transition.localScale, targetScale, 50 * Time.deltaTime);
 	}
 
 	public void Win()
 	{
 		currentLevel++;
-		Invoke("LoadNextLevel",1f);
+		Invoke("menu", 1f);
 		targetScale = Vector3.one * 25;
 		source.PlayOneShot(winSound);
 	}
 
-	void LoadNextLevel()
-	{
-		SceneManager.LoadScene(levels[currentLevel]);
+	public void menu()
+    {
+		SceneManager.LoadScene("Menu");
 		targetScale = Vector3.zero;
 	}
+	void LoadNextLevel()
+	{
+		SceneManager.LoadScene("Menu");
+		targetScale = Vector3.zero;
+	}
+
+
 
 	public void Lose()
 	{
@@ -60,15 +67,15 @@ public class GameManager : MonoBehaviour
 		if (hp > 0)
 		{
 			// fail
-			Invoke("LoadNextLevel",1f);
+			Invoke("LoadNextLevel", 1f);
 			source.PlayOneShot(loseSound);
 		}
 		else
 		{
-			// game over
+			
 			currentLevel = 0;
 			hp = 3;
-			Invoke("LoadNextLevel",1f);
+			Invoke("menu", 1f);
 			source.PlayOneShot(gameOverSound);
 		}
 
