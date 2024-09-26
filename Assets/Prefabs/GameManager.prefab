@@ -47,10 +47,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levels:
-  - Level 1
-  - Level 2
-  - Level 3
-  - Showcase
+  - AgneS. Plains
+  - BenediktasD
+  - Denis B. Water
+  - DominykasG Cave
+  - DominykasKSkyIslandMap
+  - Erikas J. Plains
+  - Greta G. Water
+  - JorisJ
+  - JorisS Sky Islands
+  - Karolina K. Water
+  - KiprasP Mountains
+  - LeuB Sky Islands
+  - Nida K Plains
+  - Paulius T.
+  - UgniusSCave
   hp: 3
   currentLevel: 0
   transition: {fileID: 4097916974262799324}
